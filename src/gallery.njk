@@ -1,0 +1,200 @@
+---
+layout: base.njk
+title: Maco Painting Gallery | Our Professional Painting Projects
+description: Browse our gallery of professional painting projects throughout Southeastern PA. Interior, exterior, cabinet, and epoxy floor transformations by Maco Painting.
+css:
+  - "hero.css"
+  - "navigation.css"
+  - "service-cards.css"
+  - "index.css"
+---
+
+<!-- Hero Section -->
+<section class="hero-section">
+  <div class="hero-overlay">
+    <h1>Our Project Gallery</h1>
+    <p class="hero-subtitle">Showcasing our craftmanship and attention to detail</p>
+  </div>
+  <img src="/images/gallery/gallery-hero.webp" alt="Stunning interior painting project by Maco Painting" class="hero-img" />
+  <div class="scroll-indicator">Scroll</div>
+</section>
+
+<section class="section-padded gallery-coming-soon">
+  <div class="coming-soon-container">
+    <div class="coming-soon-icon">
+      <svg xmlns="http://www.w3.org/2000/svg" width="80" height="80" viewBox="0 0 24 24" fill="none" stroke="#ff3c1e" stroke-width="2" stroke-linecap="round" stroke-linejoin="round">
+        <rect x="3" y="3" width="18" height="18" rx="2" ry="2"></rect>
+        <circle cx="8.5" cy="8.5" r="1.5"></circle>
+        <polyline points="21 15 16 10 5 21"></polyline>
+      </svg>
+    </div>
+    <h2>Gallery Coming Soon</h2>
+    <p>We're currently curating our portfolio of stunning painting projects to showcase our craftsmanship and attention to detail. Check back soon to browse our completed work!</p>
+    
+    <div class="preview-text">
+      <h3>What You'll Soon See:</h3>
+      <ul class="gallery-preview-list">
+        <li>Elegant interior transformations</li>
+        <li>Stunning exterior refreshes</li>
+        <li>Beautiful cabinet refinishing projects</li>
+        <li>Durable epoxy floor installations</li>
+        <li>Commercial painting solutions</li>
+      </ul>
+    </div>
+  </div>
+  
+  <div class="placeholder-gallery">
+    <div class="placeholder-image"></div>
+    <div class="placeholder-image"></div>
+    <div class="placeholder-image"></div>
+  </div>
+  
+  <div class="cta-block">
+    <h3>Can't Wait to See Our Work?</h3>
+    <p>Contact us directly to discuss your project and request references or sample photos.</p>
+    <a href="/contact-us/" class="cta-button">Contact Us</a>
+  </div>
+</section>
+
+<!-- Add the additional CSS styles inline -->
+<style>
+.hero-section .hero-overlay {
+    padding-top: 30px; /* Adds space at the top of just the hero overlay */
+  }
+  .gallery-coming-soon {
+    text-align: center;
+    max-width: 900px;
+    margin: 0 auto;
+  }
+  
+  .coming-soon-container {
+    background-color: rgba(20, 20, 20, 0.7);
+    border-radius: 0.5rem;
+    padding: 3rem 2rem;
+    margin-bottom: 3rem;
+  }
+  
+  .coming-soon-icon {
+    margin-bottom: 2rem;
+  }
+  
+  .gallery-coming-soon h2 {
+    font-size: 2.5rem;
+    margin-bottom: 1.5rem;
+    color: #ff3c1e;
+  }
+  
+  .gallery-coming-soon p {
+    font-size: 1.2rem;
+    max-width: 700px;
+    margin: 0 auto 2rem;
+  }
+  
+  .preview-text {
+    margin: 3rem auto;
+    max-width: 500px;
+  }
+  
+  .gallery-preview-list {
+    text-align: left;
+    display: inline-block;
+    margin: 1rem auto;
+  }
+  
+  .gallery-preview-list li {
+    margin-bottom: 0.75rem;
+    position: relative;
+    padding-left: 1.5rem;
+  }
+  
+  .gallery-preview-list li::before {
+    content: "";
+    position: absolute;
+    left: 0;
+    top: 0.5rem;
+    width: 8px;
+    height: 8px;
+    background-color: #ff3c1e;
+    border-radius: 50%;
+  }
+  
+  .placeholder-gallery {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));
+    gap: 1.5rem;
+    margin: 3rem 0;
+  }
+  
+  .placeholder-image {
+    height: 200px;
+    background: linear-gradient(135deg, rgba(40, 40, 40, 0.7) 0%, rgba(80, 80, 80, 0.5) 100%);
+    border-radius: 0.5rem;
+    position: relative;
+    overflow: hidden;
+  }
+  
+  .placeholder-image::after {
+    content: "";
+    position: absolute;
+    top: -50%;
+    left: -50%;
+    width: 200%;
+    height: 200%;
+    background: linear-gradient(90deg, rgba(255, 255, 255, 0) 0%, rgba(255, 255, 255, 0.05) 50%, rgba(255, 255, 255, 0) 100%);
+    animation: shimmer 2.5s infinite;
+    transform: rotate(30deg);
+  }
+  
+  @keyframes shimmer {
+    0% {
+      transform: translateX(-100%) rotate(30deg);
+    }
+    100% {
+      transform: translateX(100%) rotate(30deg);
+    }
+  }
+  
+  .cta-block {
+    margin-top: 4rem;
+    padding: 2rem;
+    background-color: rgba(255, 60, 30, 0.1);
+    border-radius: 0.5rem;
+  }
+  
+  .cta-block h3 {
+    margin-top: 0;
+  }
+  
+  .cta-button {
+    display: inline-block;
+    background-color: #ff3c1e;
+    color: white;
+    padding: 0.75rem 2rem;
+    border-radius: 0.25rem;
+    font-size: 1.1rem;
+    font-weight: 600;
+    margin-top: 1rem;
+    transition: background-color 0.3s ease;
+    text-decoration: none;
+  }
+  
+  .cta-button:hover, .cta-button:focus {
+    background-color: #ff6e5a;
+    text-decoration: none;
+    color: white;
+  }
+  
+  @media (max-width: 768px) {
+    .coming-soon-container {
+      padding: 2rem 1.5rem;
+    }
+    
+    .gallery-coming-soon h2 {
+      font-size: 2rem;
+    }
+    
+    .placeholder-gallery {
+      grid-template-columns: 1fr;
+    }
+  }
+</style>

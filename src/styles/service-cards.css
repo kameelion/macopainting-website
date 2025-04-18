@@ -1,0 +1,168 @@
+/* ============================================================================
+   🌋 MACO PAINTING – SERVICE CARD MODULE
+   ----------------------------------------------------------------------------
+   ✨ Glowing grid layout with engraved ivory icons
+   ✅ Smooth hover & press interactions
+   ✅ Mobile + tablet responsive
+   ✅ Dark mode friendly
+   ============================================================================
+*/
+
+.service-grid {
+  display: grid;
+  grid-template-columns: repeat(
+    4,
+    1fr
+  ); /* Changed to 4 columns for 2 rows of 4 */
+  gap: 2.5rem;
+  padding: 3rem 2rem;
+  max-width: 1440px;
+  margin: 0 auto;
+  place-items: center;
+  background-color: #000;
+}
+
+.service-card {
+  width: 100%;
+  max-width: 280px;
+  min-height: 320px;
+  background-color: transparent;
+  border-radius: 1.5rem;
+  box-shadow: 0 2px 4px rgba(0, 0, 0, 0.2);
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  transition: all 0.3s ease;
+  position: relative;
+  cursor: pointer;
+  will-change: transform, box-shadow;
+  padding: 0.85rem;
+
+  /* Kill the link underline */
+  text-decoration: none !important;
+  color: inherit;
+}
+
+.service-card:hover,
+.service-card:focus,
+.service-card:visited,
+.service-card:active {
+  text-decoration: none !important;
+  color: inherit;
+}
+
+.card-content {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: flex-start;
+  height: 100%;
+  padding-top: 0.25rem;
+  padding-bottom: 0.5rem;
+}
+
+.service-card img {
+  width: 230px;
+  height: 230px;
+  object-fit: contain;
+  display: block;
+  -webkit-user-drag: none;
+  pointer-events: none;
+  transition: filter 0.3s ease;
+}
+
+.service-label {
+  font-family: "Playfair Display", serif;
+  font-size: 1.25rem;
+  color: #f5f5f5;
+  text-align: center;
+  margin-top: 1rem;
+  font-weight: 600;
+  letter-spacing: 0.5px;
+  text-decoration: none; /* No underline */
+}
+
+/* Remove underline from link-styled labels */
+.service-card:link .service-label,
+.service-card:visited .service-label {
+  text-decoration: none;
+  color: #f5f5f5;
+}
+
+/* Volcanic Hover Glow */
+.service-card:hover {
+  transform: scale(1.05);
+  box-shadow: 0 0 16px rgba(255, 40, 20, 0.25), 0 0 36px rgba(255, 40, 20, 0.45),
+    0 0 70px rgba(255, 20, 10, 0.3);
+}
+
+.service-card:hover img {
+  filter: drop-shadow(0 0 12px rgba(255, 60, 30, 0.85)) brightness(1.08)
+    contrast(1.1);
+}
+
+/* Pressed State */
+.service-card:active {
+  transform: scale(0.97);
+  box-shadow: inset 0 0 25px rgba(255, 30, 10, 0.85),
+    0 0 36px rgba(240, 20, 10, 0.6);
+}
+
+.service-card:active img {
+  filter: drop-shadow(0 0 18px rgba(255, 30, 10, 1));
+}
+
+/* Accessibility */
+.service-card:focus {
+  outline: 2px solid rgba(255, 80, 50, 0.8);
+  outline-offset: 4px;
+  box-shadow: 0 0 16px rgba(255, 80, 50, 0.5);
+}
+
+/* Touch Devices */
+@media (hover: none) and (pointer: coarse) {
+  .service-card:hover {
+    transform: none;
+    box-shadow: none;
+  }
+  .service-card:hover img {
+    filter: none;
+  }
+}
+
+/* Tablet Optimization */
+@media (max-width: 992px) {
+  .service-grid {
+    grid-template-columns: repeat(2, 1fr);
+    gap: 1.75rem;
+    padding: 2rem 1.5rem;
+  }
+
+  .service-card {
+    max-width: 200px;
+    padding: 0.75rem;
+  }
+
+  .service-label {
+    font-size: 1.05rem;
+    margin-top: 0.75rem;
+  }
+}
+
+/* Mobile Optimization */
+@media (max-width: 480px) {
+  .service-grid {
+    grid-template-columns: 1fr;
+    gap: 1.25rem;
+  }
+
+  .service-card {
+    max-width: 180px;
+    padding: 0.5rem;
+  }
+
+  .service-label {
+    font-size: 0.95rem;
+  }
+}

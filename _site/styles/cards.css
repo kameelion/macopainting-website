@@ -1,0 +1,108 @@
+/* =======================================
+   MACO Painting – Carved Icon Grid
+   Clean Neoclassical Style
+   ======================================= */
+
+.service-grid {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(160px, 1fr));
+  gap: 2rem;
+  padding: 2rem;
+  justify-items: center;
+  max-width: 1200px;
+  margin: 0 auto;
+}
+
+.service-card {
+  width: 150px;
+  height: 150px;
+  background-color: #f5f1e9; /* Light carved beige */
+  border-radius: 20px;
+  box-shadow: inset 0 2px 4px rgba(0, 0, 0, 0.1),
+    inset 0 -2px 4px rgba(255, 255, 255, 0.6);
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  transition: all 0.25s ease;
+  cursor: pointer;
+  position: relative;
+  overflow: hidden;
+}
+
+.service-card img {
+  width: 60px;
+  height: 60px;
+  object-fit: contain;
+  transition: filter 0.3s ease;
+  pointer-events: none;
+}
+
+/* Entrance animation */
+@keyframes fadeInScale {
+  0% {
+    opacity: 0;
+    transform: scale(0.9);
+  }
+  100% {
+    opacity: 1;
+    transform: scale(1);
+  }
+}
+
+.service-card {
+  animation: fadeInScale 0.5s ease forwards;
+  animation-delay: 0.1s;
+  opacity: 0; /* So animation starts from invisible */
+}
+
+/* Hover – inner red/orange glow pulse */
+.service-card:hover {
+  box-shadow: inset 0 2px 4px rgba(0, 0, 0, 0.1),
+    0 0 12px rgba(240, 80, 50, 0.4), 0 0 24px rgba(240, 80, 50, 0.2);
+}
+
+.service-card:hover img {
+  filter: drop-shadow(0 0 4px rgba(240, 80, 50, 0.8)) brightness(1.03)
+    contrast(1.05);
+}
+
+/* Pressed */
+.service-card:active {
+  transform: scale(0.97);
+  box-shadow: inset 2px 2px 8px rgba(0, 0, 0, 0.25),
+    inset -2px -2px 8px rgba(255, 100, 80, 0.3), 0 0 8px rgba(240, 50, 30, 0.5);
+}
+
+.service-card:active img {
+  filter: drop-shadow(0 0 6px rgba(240, 50, 30, 1));
+}
+
+.service-card.active {
+  outline: 2px solid rgba(240, 50, 30, 0.5);
+  box-shadow: inset 0 0 0 2px rgba(240, 50, 30, 0.5),
+    0 0 10px rgba(240, 50, 30, 0.3);
+}
+
+/* Keyboard focus accessibility */
+.service-card:focus {
+  outline: 2px solid rgba(240, 80, 50, 0.6);
+  outline-offset: 4px;
+  box-shadow: 0 0 10px rgba(240, 80, 50, 0.3);
+}
+
+@media (hover: none) and (pointer: coarse) {
+  .service-card:active {
+    transform: scale(0.95);
+    box-shadow: inset 0 4px 6px rgba(0, 0, 0, 0.2),
+      inset 0 0 10px rgba(240, 50, 30, 0.3);
+  }
+
+  .service-card:hover {
+    /* Disable hover effect on mobile */
+    box-shadow: none;
+  }
+
+  .service-card:hover img {
+    filter: none;
+  }
+}

@@ -1,0 +1,39 @@
+{
+  "@context": "https://schema.org",
+  "@type": "LocalBusiness",
+  "additionalType": "https://schema.org/PaintingContractor",
+  "name": "Maco Painting",
+  "url": "https://www.macopainting.com",
+  "description": "Maco Painting is a trusted residential and commercial painting contractor serving Chester, Delaware, and Montgomery counties, and the Main Line. Founded in 2001, we deliver expert painting, refinishing, and surface preparation services for homes and businesses throughout Southeastern Pennsylvania.",
+  "image": "https://www.macopainting.com/images/about/about-hero-main.webp",
+  "priceRange": "$",
+  "address": {
+    "@type": "PostalAddress",
+    "streetAddress": "1288 Claridge Court",
+    "addressLocality": "Coatesville",
+    "addressRegion": "PA",
+    "postalCode": "19320",
+    "addressCountry": "US"
+  },
+  "geo": {
+    "@type": "GeoCoordinates",
+    "latitude": "39.9833",
+    "longitude": "-75.8233"
+  },
+  "openingHours": "Mo-Fr 08:00-18:00",
+  "contactPoint": {
+    "@type": "ContactPoint",
+    "telephone": "+1-484-467-5443",
+    "contactType": "Customer Service"
+  },
+  "areaServed": [
+    { "@type": "Place", "name": "Chester County" },
+    { "@type": "Place", "name": "Delaware County" },
+    { "@type": "Place", "name": "Montgomery County" },
+    { "@type": "Place", "name": "The Main Line" }
+  ],
+  "sameAs": [
+    "https://www.facebook.com/macopainting",
+    "https://www.instagram.com/macopainting"
+  ]
+}

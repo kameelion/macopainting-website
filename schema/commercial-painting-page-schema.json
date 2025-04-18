@@ -1,0 +1,89 @@
+<script type="application/ld+json">
+{
+  "@context": "https://schema.org",
+  "@type": "Service",
+  "name": "Commercial Painting",
+  "provider": {
+    "@type": "Organization",
+    "name": "Maco Painting",
+    "url": "https://macopainting.com",
+    "logo": "https://macopainting.com/images/logo.png",
+    "image": "https://macopainting.com/images/commercial/commercial-painting-hero.webp",
+    "telephone": "+1-484-467-5443",
+    "address": {
+      "@type": "PostalAddress",
+      "streetAddress": "1288 Claridge Court",
+      "addressLocality": "Coatesville",
+      "addressRegion": "PA",
+      "postalCode": "19320",
+      "addressCountry": "US"
+    }
+  },
+  "areaServed": [
+    {
+      "@type": "Place",
+      "name": "Chester County"
+    },
+    {
+      "@type": "Place",
+      "name": "Delaware County"
+    },
+    {
+      "@type": "Place",
+      "name": "Montgomery County"
+    },
+    {
+      "@type": "Place",
+      "name": "Main Line"
+    }
+  ],
+  "serviceType": [
+    "Retail & Office Building Painting",
+    "Hospitality & HOA Property Painting",
+    "Warehouse & Industrial Painting",
+    "Interior & Exterior Commercial Painting"
+  ],
+  "description": "Maco Painting offers expert commercial painting services for businesses across Southeastern Pennsylvania. We specialize in high-quality interior and exterior finishes for retail, office, hospitality, HOA, and industrial spaces.",
+  "hasOfferCatalog": {
+    "@type": "OfferCatalog",
+    "name": "Commercial Painting Services",
+    "itemListElement": [
+      {
+        "@type": "Offer",
+        "itemOffered": {
+          "@type": "Service",
+          "name": "Retail & Shopping Center Painting"
+        }
+      },
+      {
+        "@type": "Offer",
+        "itemOffered": {
+          "@type": "Service",
+          "name": "Office Buildings & Corporate Spaces"
+        }
+      },
+      {
+        "@type": "Offer",
+        "itemOffered": {
+          "@type": "Service",
+          "name": "Hospitality Venues & Hotels"
+        }
+      },
+      {
+        "@type": "Offer",
+        "itemOffered": {
+          "@type": "Service",
+          "name": "Apartment Complex & HOA Painting"
+        }
+      },
+      {
+        "@type": "Offer",
+        "itemOffered": {
+          "@type": "Service",
+          "name": "Industrial & Warehouse Painting"
+        }
+      }
+    ]
+  }
+}
+</script>
