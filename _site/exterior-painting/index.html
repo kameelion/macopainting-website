@@ -1,16 +1,84 @@
----
-layout: base.njk
-title: Exterior Painting – Boost Your Home's Curb Appeal | Maco Painting
-description: Enhance your home’s exterior with Maco Painting’s expert prep and finish services. Serving Chester, Delaware, and Montgomery counties.
-css:
-  - "hero.css"
-  - "navigation.css"
-  - "service-cards.css"
-  - "index.css"
-preloadImages:
-  - "/images/exterior/exterior-house-painters-hero.webp"
----
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Exterior Painting – Boost Your Home&#39;s Curb Appeal | Maco Painting</title>
+  <meta name="description" content="Enhance your home’s exterior with Maco Painting’s expert prep and finish services. Serving Chester, Delaware, and Montgomery counties.">
 
+ <!-- Preload critical above-the-fold images -->
+
+  
+    <link rel="preload" as="image" href="/images/exterior/exterior-house-painters-hero.webp" type="image/webp">
+  
+
+  
+  <!-- Google Fonts -->
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Playfair+Display:wght@400;500;600;700&family=Montserrat:wght@300;400;500;600&display=swap" rel="stylesheet">
+  
+  <!-- Base CSS - Always include essential files -->
+  <link rel="stylesheet" href="/styles/global.css">
+  <link rel="stylesheet" href="/styles/navigation.css">
+  <link rel="stylesheet" href="/styles/hero.css">
+  
+  <!-- Page-specific CSS -->
+  
+    <link rel="stylesheet" href="/styles/hero.css">
+  
+    <link rel="stylesheet" href="/styles/navigation.css">
+  
+    <link rel="stylesheet" href="/styles/service-cards.css">
+  
+    <link rel="stylesheet" href="/styles/index.css">
+  
+</head>
+<body>
+  <!-- Navigation -->
+  <header class="site-header">
+    <div class="nav-container">
+      <a href="/" class="logo">MACO PAINTING</a>
+      
+      <!-- Add Phone Number with Icon -->
+      <a href="tel:+14844675443" class="header-phone">
+        <svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" class="phone-icon">
+          <path d="M22 16.92v3a2 2 0 0 1-2.18 2 19.79 19.79 0 0 1-8.63-3.07 19.5 19.5 0 0 1-6-6 19.79 19.79 0 0 1-3.07-8.67A2 2 0 0 1 4.11 2h3a2 2 0 0 1 2 1.72 12.84 12.84 0 0 0 .7 2.81 2 2 0 0 1-.45 2.11L8.09 9.91a16 16 0 0 0 6 6l1.27-1.27a2 2 0 0 1 2.11-.45 12.84 12.84 0 0 0 2.81.7A2 2 0 0 1 22 16.92z"></path>
+        </svg>
+        <span>(484) 467-5443</span>
+      </a>
+      
+      <button class="menu-toggle" aria-label="Toggle navigation menu">
+        <span class="menu-bar"></span>
+        <span class="menu-bar"></span>
+        <span class="menu-bar"></span>
+      </button>
+      
+      <nav class="main-nav">
+        <ul class="nav-list">
+          <li class="nav-item"><a href="/">About</a></li>
+          <li class="nav-item has-dropdown">
+            <a href="#" class="dropdown-trigger">Our Services</a>
+            <ul class="dropdown-menu">
+              <li><a href="/residential-painting/">Residential Painting</a></li>
+              <li><a href="/interior-painting/">Interior Painting</a></li>
+              <li><a href="/exterior-painting/">Exterior Painting</a></li>
+              <li><a href="/drywall-and-trim/">Drywall & Trim Work</a></li>
+              <li><a href="/cabinet-refinishing/">Cabinet Refinishing</a></li>
+              <li><a href="/epoxy-floors/">Epoxy Floors</a></li>
+              <li><a href="/commercial-painting/">Commercial Painting</a></li>
+              <li><a href="/commercial-epoxy-floors/">Commercial Epoxy Floors</a></li>
+            </ul>
+          </li>
+          <li class="nav-item"><a href="/gallery/">Gallery</a></li>
+          <li class="nav-item"><a href="/contact-us/">Contact</a></li>
+        </ul>
+      </nav>
+    </div>
+  </header>
+
+  <main>
+    
 <!-- Hero Section -->
 <section class="hero-section">
   <div class="hero-overlay">
@@ -175,11 +243,10 @@ preloadImages:
 </section>
 
 <section class="section-padded">
-  <div class="cta-container">
-    <h2 class="section-title">Need a Fresh Look for Your Home's Exterior?</h2>
-    <p class="cta-text">Call <a href="tel:+14844675443">(484) 467-5443</a> today to get a free quote and experience premium exterior painting that lasts.</p>
-    <a href="/contact-us" class="cta-button">Request Your Free Estimate</a>
-  </div>
+  <h3>Ready to Protect and Enhance Your Home?</h3>
+  <p>
+    <a href="/contact-us">Contact us</a> today to schedule your free consultation and estimate. Experience the Maco Painting difference for yourself and discover why homeowners throughout Southeastern Pennsylvania trust us with their exterior painting needs.
+  </p>
 </section>
 
 <!-- Schema Markup from exterior-painting-page-schema.json -->
@@ -253,3 +320,45 @@ preloadImages:
     }
   }
 </style>
+  </main>
+
+ <!-- In base.njk, modify the footer section to include social icons -->
+<footer class="site-footer">
+  <div class="footer-container">
+    <div class="footer-info">
+      <h3>MACO PAINTING</h3>
+      <p>&copy; <script>document.write(new Date().getFullYear());</script> Maco Painting. All rights reserved.</p>
+      <p>Serving Chester, Delaware, and Montgomery counties, and the Main Line.</p>
+      <p>PA License: PA115278</p>
+    </div>
+    <div class="footer-contact">
+      <h4>Contact Us</h4>
+      <p><a href="tel:+14844675443">(484) 467-5443</a></p>
+      <p><a href="mailto:info@macopainting.com">info@macopainting.com</a></p>
+      
+      <!-- Add this social media section -->
+      <div class="footer-social">
+        <h4>Follow Us</h4>
+        <div class="social-icons">
+          <a href="https://www.facebook.com/macopainting" target="_blank" rel="noopener noreferrer" aria-label="Maco Painting on Facebook">
+            <svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round">
+              <path d="M18 2h-3a5 5 0 0 0-5 5v3H7v4h3v8h4v-8h3l1-4h-4V7a1 1 0 0 1 1-1h3z"></path>
+            </svg>
+          </a>
+          <a href="https://www.instagram.com/macopainting" target="_blank" rel="noopener noreferrer" aria-label="Maco Painting on Instagram">
+            <svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round">
+              <rect x="2" y="2" width="20" height="20" rx="5" ry="5"></rect>
+              <path d="M16 11.37A4 4 0 1 1 12.63 8 4 4 0 0 1 16 11.37z"></path>
+              <line x1="17.5" y1="6.5" x2="17.51" y2="6.5"></line>
+            </svg>
+          </a>
+        </div>
+      </div>
+    </div>
+  </div>
+</footer>
+
+  <!-- Navigation script -->
+  <script src="/scripts/navigation.js" defer></script>
+</body>
+</html>
