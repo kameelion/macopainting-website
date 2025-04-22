@@ -17,12 +17,17 @@ preloadImages:
     <p class="hero-subtitle">Expert painters delivering quality results throughout Southeastern Pennsylvania</p>
   </div>
   <img 
-    src="/images/about-main/about-hero-main.webp" 
-    alt="Professional painters working in an elegant home" 
-    class="hero-img"
-    fetchpriority="high"
-    decoding="async"
-  />
+  src="/images/about-main/about-hero-main.webp"
+  srcset="/images/about-main/about-hero-main-480.webp 480w,
+          /images/about-main/about-hero-main-768.webp 768w,
+          /images/about-main/about-hero-main.webp 1200w"
+  sizes="(max-width: 600px) 100vw, 1000px"
+  alt="Professional painters working in an elegant home"
+  class="hero-img"
+  fetchpriority="high"
+  decoding="async"
+/>
+
   <div class="scroll-indicator">SCROLL</div>
 </section>
 
