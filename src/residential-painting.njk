@@ -7,6 +7,8 @@ css:
   - "navigation.css"
   - "service-cards.css"
   - "index.css"
+preloadImages:
+  - "/images/residential/residential-painting-hero.webp"
 ---
 
 <!-- Hero Section -->
@@ -15,7 +17,14 @@ css:
     <h1>Transform Your Home with Maco Painting's Residential Services</h1>
     <p class="hero-subtitle">Professional painting solutions tailored for your home's unique style and character</p>
   </div>
-  <img src="/images/residential/residential-painting-hero.webp" alt="Beautiful residential interior repainted by Maco Painting" class="hero-img" />
+  <img 
+  src="/images/residential/residential-painting-hero.webp" 
+  alt="Beautiful residential interior repainted by Maco Painting" 
+  class="hero-img"
+  fetchpriority="high"
+  decoding="async"
+/>
+
   <div class="scroll-indicator">Scroll</div>
 </section>
 
