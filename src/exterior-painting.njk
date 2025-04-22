@@ -18,7 +18,15 @@ pageClass: exterior-page
     <h1>Protect and Beautify Your Home with Expert Exterior Painting</h1>
     <p class="hero-subtitle">Premium exterior finishes for homes in Chester, Delaware, and Montgomery counties, and the Main Line</p>
   </div>
-  <img src="/images/exterior/exterior-house-painters-hero.webp" alt="Beautiful home exterior painted by Maco Painting" class="hero-img" width="1600" height="900" />
+
+  <picture>
+    <!-- Mobile: Serve 768px version -->
+    <source srcset="/images/exterior/exterior-house-painters-hero-768.webp" media="(max-width: 768px)" type="image/webp">
+    
+    <!-- Desktop: Serve 1600px version -->
+    <img src="/images/exterior/exterior-house-painters-hero.webp" alt="Beautiful home exterior painted by Maco Painting" class="hero-img" width="1600" height="900" />
+  </picture>
+
   <div class="scroll-indicator">Scroll</div>
 </section>
 
