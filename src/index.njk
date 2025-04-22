@@ -7,6 +7,8 @@ css:
   - "navigation.css"
   - "service-cards.css"
   - "index.css"
+preloadImages:
+  - "/images/about-main/about-hero-main.webp"
 ---
 
 <section class="hero-section">
@@ -14,7 +16,13 @@ css:
     <h1>Maco Painting – Excellence, Craftsmanship, Trust</h1>
     <p class="hero-subtitle">Expert painters delivering quality results throughout Southeastern Pennsylvania</p>
   </div>
-  <img src="/images/about-main/about-hero-main.webp" alt="Professional painters working in an elegant home" class="hero-img">
+  <img 
+    src="/images/about-main/about-hero-main.webp" 
+    alt="Professional painters working in an elegant home" 
+    class="hero-img"
+    fetchpriority="high"
+    decoding="async"
+  />
   <div class="scroll-indicator">SCROLL</div>
 </section>
 
