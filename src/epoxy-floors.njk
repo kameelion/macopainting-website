@@ -17,7 +17,15 @@ preloadImages:
     <h1>Durable & Stylish Residential Epoxy Floors</h1>
     <p class="hero-subtitle">Premium epoxy flooring solutions for your garage, basement, and living areas</p>
   </div>
-  <img src="/images/epoxy-residential/residential-epoxy-floors-hero.webp" alt="Stunning residential epoxy floor installation by Maco Painting" class="hero-img" />
+
+  <picture>
+    <!-- Mobile: Serve 768px version -->
+    <source srcset="/images/epoxy-residential/residential-epoxy-floors-hero-768.webp" media="(max-width: 768px)" type="image/webp">
+    
+    <!-- Desktop: Serve 1600px version -->
+    <img src="/images/epoxy-residential/residential-epoxy-floors-hero.webp" alt="Stunning residential epoxy floor installation by Maco Painting" class="hero-img" width="1600" height="900" />
+  </picture>
+
   <div class="scroll-indicator">Scroll</div>
 </section>
 
