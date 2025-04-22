@@ -196,3 +196,11 @@ section:not(.hero-section):not(.service-grid) {
     padding-right: 1rem;
   }
 }
+/* EXTERIOR HERO – CSS Background Optimization */
+body.exterior-page .hero-section {
+  background-image: url("/images/exterior/exterior-house-painters-hero.webp");
+  background-size: cover;
+  background-position: center;
+  background-repeat: no-repeat;
+  background-attachment: scroll;
+}
