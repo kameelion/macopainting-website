@@ -1,8 +1,8 @@
 module.exports = function (eleventyConfig) {
   eleventyConfig.addPassthroughCopy("src/styles");
   eleventyConfig.addPassthroughCopy("src/images");
-  eleventyConfig.addPassthroughCopy("src/scripts"); // Added scripts directory
-  eleventyConfig.addPassthroughCopy("public"); // 🚀 Add this line to copy the public folder
+  eleventyConfig.addPassthroughCopy("src/scripts"); // Scripts directory
+  eleventyConfig.addPassthroughCopy("src/public"); // ✅ Corrected path for public passthrough
 
   return {
     dir: {
