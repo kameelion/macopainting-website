@@ -3,57 +3,87 @@
 <head>
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <meta name="google-site-verification" content="OnupwkB8jzg_Bdd-W_a5POz49DJFZfq5a3kHTRQq9yQ" />
   <title>Commercial Painting Contractors | Maco Painting – Serving Southeastern PA</title>
   <meta name="description" content="Maco Painting provides expert commercial painting services for businesses across Southeastern Pennsylvania. We specialize in high-quality interior and exterior finishes for retail, office, hospitality, HOA, and industrial spaces.">
 
- <!-- Preload critical above-the-fold images -->
+  <!-- Preload critical hero images if provided -->
+  
+    
+      <link rel="preload" as="image" href="/images/commercial/commercial-hero.webp" type="image/webp">
+    
+  
 
-  
-    <link rel="preload" as="image" href="/images/commercial/commercial-hero.webp" type="image/webp">
-  
-
-  
-  <!-- Google Fonts -->
+  <!-- Preconnect for Fonts -->
   <link rel="preconnect" href="https://fonts.googleapis.com">
   <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
   <link href="https://fonts.googleapis.com/css2?family=Playfair+Display:wght@400;500;600;700&family=Montserrat:wght@300;400;500;600&display=swap" rel="stylesheet">
-  
-  <!-- Base CSS - Always include essential files -->
+
+  <!-- Essential CSS -->
   <link rel="stylesheet" href="/styles/global.css">
   <link rel="stylesheet" href="/styles/navigation.css">
   <link rel="stylesheet" href="/styles/hero.css">
-  
+  <link rel="stylesheet" href="/styles/service-cards.css">
+
   <!-- Page-specific CSS -->
   
-    <link rel="stylesheet" href="/styles/hero.css">
+    
+      <link rel="stylesheet" href="/styles/hero.css">
+    
+      <link rel="stylesheet" href="/styles/navigation.css">
+    
+      <link rel="stylesheet" href="/styles/service-cards.css">
+    
+      <link rel="stylesheet" href="/styles/index.css">
+    
   
-    <link rel="stylesheet" href="/styles/navigation.css">
-  
-    <link rel="stylesheet" href="/styles/service-cards.css">
-  
-    <link rel="stylesheet" href="/styles/index.css">
-  
+
+  <!-- Inline LocalBusiness Schema for SEO -->
+  <script type="application/ld+json">
+  {
+    "@context": "https://schema.org",
+    "@type": "LocalBusiness",
+    "name": "Maco Painting",
+    "url": "https://www.macopainting.com",
+    "logo": "https://www.macopainting.com/logo.png",
+    "image": "https://www.macopainting.com/images/exterior/exterior-house-painters-hero.webp",
+    "description": "Maco Painting provides top-notch residential and commercial painting services in Southeastern PA. Specializing in interiors, exteriors, and epoxy flooring.",
+    "address": {
+      "@type": "PostalAddress",
+      "streetAddress": "1288 Claridge Court",
+      "addressLocality": "Coatesville",
+      "addressRegion": "PA",
+      "postalCode": "19320",
+      "addressCountry": "US"
+    },
+    "telephone": "+1-484-467-5443",
+    "priceRange": "$$ - $$$",
+    "areaServed": [
+      { "@type": "Place", "name": "Chester County" },
+      { "@type": "Place", "name": "Delaware County" },
+      { "@type": "Place", "name": "Montgomery County" },
+      { "@type": "Place", "name": "Main Line" }
+    ]
+  }
+  </script>
 </head>
-<body>
+
+<body class="">
   <!-- Navigation -->
   <header class="site-header">
     <div class="nav-container">
       <a href="/" class="logo">MACO PAINTING</a>
-      
-      <!-- Add Phone Number with Icon -->
       <a href="tel:+14844675443" class="header-phone">
         <svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" class="phone-icon">
           <path d="M22 16.92v3a2 2 0 0 1-2.18 2 19.79 19.79 0 0 1-8.63-3.07 19.5 19.5 0 0 1-6-6 19.79 19.79 0 0 1-3.07-8.67A2 2 0 0 1 4.11 2h3a2 2 0 0 1 2 1.72 12.84 12.84 0 0 0 .7 2.81 2 2 0 0 1-.45 2.11L8.09 9.91a16 16 0 0 0 6 6l1.27-1.27a2 2 0 0 1 2.11-.45 12.84 12.84 0 0 0 2.81.7A2 2 0 0 1 22 16.92z"></path>
         </svg>
         <span>(484) 467-5443</span>
       </a>
-      
       <button class="menu-toggle" aria-label="Toggle navigation menu">
         <span class="menu-bar"></span>
         <span class="menu-bar"></span>
         <span class="menu-bar"></span>
       </button>
-      
       <nav class="main-nav">
         <ul class="nav-list">
           <li class="nav-item"><a href="/">About</a></li>
@@ -77,6 +107,7 @@
     </div>
   </header>
 
+  <!-- Main Content -->
   <main>
     
 <!-- Hero Section -->
@@ -250,7 +281,7 @@
   <div class="cta-container">
     <h2 class="section-title">Ready to Transform Your Commercial Space?</h2>
     <p class="cta-text">Experience the Maco Painting difference today.</p>
-    <p>Call <a href="tel:+14844675443">(484) 467-5443)</a> to schedule your free consultation and bring new life to your commercial property.</p>
+    <p>Call <a href="tel:+14844675443">(484) 467-5443</a> to schedule your free consultation and bring new life to your commercial property.</p>
     <a href="/contact-us/" class="cta-button">Get Your Free Estimate</a>
   </div>
 </section>
@@ -347,43 +378,15 @@
 </script>
   </main>
 
- <!-- In base.njk, modify the footer section to include social icons -->
-<footer class="site-footer">
-  <div class="footer-container">
-    <div class="footer-info">
-      <h3>MACO PAINTING</h3>
-      <p>&copy; <script>document.write(new Date().getFullYear());</script> Maco Painting. All rights reserved.</p>
-      <p>Serving Chester, Delaware, and Montgomery counties, and the Main Line.</p>
-      <p>PA License: PA115278</p>
-    </div>
-    <div class="footer-contact">
-      <h4>Contact Us</h4>
-      <p><a href="tel:+14844675443">(484) 467-5443</a></p>
-      <p><a href="mailto:info@macopainting.com">info@macopainting.com</a></p>
-      
-      <!-- Add this social media section -->
-      <div class="footer-social">
-        <h4>Follow Us</h4>
-        <div class="social-icons">
-          <a href="https://www.facebook.com/macopainting" target="_blank" rel="noopener noreferrer" aria-label="Maco Painting on Facebook">
-            <svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round">
-              <path d="M18 2h-3a5 5 0 0 0-5 5v3H7v4h3v8h4v-8h3l1-4h-4V7a1 1 0 0 1 1-1h3z"></path>
-            </svg>
-          </a>
-          <a href="https://www.instagram.com/macopainting" target="_blank" rel="noopener noreferrer" aria-label="Maco Painting on Instagram">
-            <svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round">
-              <rect x="2" y="2" width="20" height="20" rx="5" ry="5"></rect>
-              <path d="M16 11.37A4 4 0 1 1 12.63 8 4 4 0 0 1 16 11.37z"></path>
-              <line x1="17.5" y1="6.5" x2="17.51" y2="6.5"></line>
-            </svg>
-          </a>
-        </div>
-      </div>
-    </div>
-  </div>
-</footer>
+  <!-- Footer (Optional or custom content here) -->
+  <footer class="site-footer">
+    <!-- Footer content if needed -->
+  </footer>
 
-  <!-- Navigation script -->
+  <!-- Navigation JS -->
   <script src="/scripts/navigation.js" defer></script>
+
+  <!-- Page-specific JS -->
+  
 </body>
 </html>
