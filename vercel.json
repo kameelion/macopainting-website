@@ -1,0 +1,9 @@
+{
+  "static": {
+    "headers": {
+      "/google9d7a9b421ff50855.html": {
+        "cache-control": "s-maxage=31536000, stale-while-revalidate"
+      }
+    }
+  }
+}
